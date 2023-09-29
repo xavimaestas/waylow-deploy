@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  background-color: #1B1E22;
+  color: #A5ACB6;
+  margin: 0;
+}
+
+/* nav */
+
+nav {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none; 
+  margin: 0 1rem; 
+  color: #8b8d92; 
+}
+nav a:hover {
+  
+  color: #A5AEB6; 
+}
+
+.logo-container {
+  display: flex; 
+  align-items: center;
+}
+
+.logo-container p {
+  margin-right: 0.5rem;
+}
+
+main {
+  margin-top: 1rem; 
+}
+
+/* home */
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.homepage-container img {
+  max-width: 80vw;
+  max-height: 35vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+/* Airline Search Container */
+
+.airline-search-container {
+  
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.airline-search-container * {
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.airline-search-container p {
+  margin-bottom: 0.5rem;
+  
+}
+
+
+/* search bar */
+
+
+.search-bar {
+  margin: 0 0 0.25rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  min-width: 260px;
+  height: fit-content;
+  padding: 0 0.5rem;
+  background-color: #121416;
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  border: 1px solid black;
+ 
+}
+
+.search-bar input[type="text"] {
+  width: 90%;
+  min-width: 60px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1C1F22;
+  color: #fff;
+  height: 10%;
+  min-height: 35px;
+}
+
+.search-bar input#from {
+  margin-top: 0;
+}
+
+
+
+.search-bar input[type="text"]::placeholder {
+  color: #8b8d92;
+  height: 10%;
+  min-height: 35px;
+  padding: 0 0.5rem;
+}
+
+
+
+.search-bar input[type="date"] {
+  width: 90%;
+  min-width: 20px;
+  font-size: 18px;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  margin: 0;
+  padding: 0 0.5rem;
+  border: 1px solid #fff;
+  height: 610%;
+  min-height: 35px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1)
+}
+
+.search-bar button {
+  background-color: #1a73e8;
+  height: 10%;
+  min-height: 35px;
+  width: 60%;
+  min-width: 70px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.search-bar button:hover {
+  background-color: #0d47a1;
+}
+
+#depature {
+  width: 150px; 
+}
+
+.fa-spinner {
+  color: white;
+  transform: scale(2);
+  margin-top: 1rem;
+}
+
+
+
+/* flight data-container */
+
+
+
+
+.flight-data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 0;
+  max-width: 1800px;
+}
+
+.flight-data-card {
+  background-color: #121417;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 1rem;
+  height: fit-content;
+  width: 90vw;
+  min-width: 260px;
+  max-width: 400px;
+  border: 1px solid black; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.flight-data-card * {
+  margin: 0.5rem 0;
+}
+
+.flight-data-card h4 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.flight-data-card i,
+.flight-data-card p  {
+  margin-top: 0;
+}
+
+
+
+.kiwi-buy-link {
+  text-decoration: none;
+  color: white;
+  background-color: #1a73e8;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+.kiwi-buy-link:hover {
+  background-color: #0d47a1;
+}
+
+.more-flight-info {
+  margin-bottom: 3rem;
+}
+
+i.fa-solid.fa-sort-up.fa-xl {
+  display: block; 
+  margin-top: 0.5rem;
+}
+
+
+.fa-sort-down:hover,
+.fa-sort-up:hover,
+.filters-dropdown:hover {
+  color: #A16A21;
+  cursor: pointer; 
+}
+
+/* filters dropdown */
+
+.filters-dropdown {
+  display: none;
+  width: 25%;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.filters-dropdown p {
+  margin: 0;
+}
+
+/* selectors container */
+
+.selectors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 0.5rem;
+}
+
+.selectors-container-hidden {
+  display: none;
+}
+
+i.fa-solid.fa-filter {
+  display: block;
+  margin-top: 0;
+}
+
+i.fa-solid.fa-filter:hover {
+  color: #A16A21;
+}
+
+.selectors-container p {
+  font-size: smaller;
+}
+
+.airline-class-container,
+.airline-class-container > p,
+.checked-container > p,
+.carryon-container > p,
+.carryon-input,
+.checked-container,
+.visible-filter-container *,
+.max-stops-input,
+.max-stops-container,
+.max-stops-container p,
+.checked-add-minus-container {
+  margin-top: 0;
+ }
+ 
+ .airlineClass
+  {
+   margin-top: 0;
+   max-width: 25px;
+ }
+
+ .carryon-container,
+ .checked-container,
+ .airline-class-container
+  {
+  margin: 0 0.5rem;
+ }
+
+ .checked-input {
+  margin: 0;
+  max-height: 50px; 
+  width: 5px;
+ }
+
+ .checked-container input[type=text] {
+   /* background-color: #121416; */
+   margin:0;
+   text-align: center;
+   border-color: 1px solid red;
+ }
+
+ .checked-container i {
+  margin: 0.2rem;
+  padding: 0.1rem;
+  background: #404040; 
+ }
+
+
+
+
+
+ 
+
+ /* visible filters container */ 
+
+ .visible-filter-container {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+ }
+
+ .visible-filter-container p {
+  margin: 0;
+  font-size: 0.85rem
+ }
+
+ .passengers-input,
+ .sort-input {
+  margin-top: 0.5rem;
+ }
+
+ .sort-input {
+  max-width: 60px;
+ }
+
+
+/* individual flight info */
+.individual-flight-info {
+  
+}
+
+
+.individual-flight-info-none {
+  display: none;
+}
+
+
+
+/* drop down */
+
+
+
+/* media queries */
+
+
+
+
+
+
+/* 900px wide*/
+
+@media  (min-width: 910px) {
+
+  .search-bar input#to {
+   margin-left: 0.5rem;
+  }
+
+  .search-bar {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    height: 30%;
+    max-height: 350px;
+    padding: 1rem 0.5rem;
+   
+   
+  }
+  .search-bar * {
+   
+    margin: 0;
+    padding: 0;
+  }
+  .search-bar p {
+    margin: 0 0.5rem;
+  }
+
+  .search-bar button {
+    margin: 0 0 0 0.5rem; 
+  }
+
+}
+  
+
+
+
+
